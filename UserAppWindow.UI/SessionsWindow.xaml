@@ -1,0 +1,48 @@
+﻿<Window x:Class="UserAppWindow.UI.SessionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserAppWindow.UI"
+        mc:Ignorable="d"
+        Title="Sessions Window" Height="500" Width="900"
+        WindowStartupLocation="CenterScreen">
+    <TabControl>
+        <TabItem Header="Current session" FontSize="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ListView x:Name="currentSessionData" Margin="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Ticket number:" Width="110" DisplayMemberBinding="{Binding Path=TicketNumber}"/>
+                            <GridViewColumn Header="Car plate number:" Width="130" DisplayMemberBinding="{Binding Path=CarPlateNumber}"/>
+                            <GridViewColumn Header="Entry date and time: " Width="175" DisplayMemberBinding="{Binding Path=EntryDt}"/>
+                            <GridViewColumn Header="Payment date and time: " Width="175" DisplayMemberBinding="{Binding Path=PaymentDt}"/>
+                            <GridViewColumn Header="Total Payment:" Width="110" DisplayMemberBinding="{Binding Path=TotalPayment}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <DataGrid Grid.Column="1" x:Name="tariffData" Margin="10"></DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Completed sessions" FontSize="15">
+            <Grid>
+                <ListView x:Name="completedSessionsData" Margin="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Ticket number:" Width="105" DisplayMemberBinding="{Binding Path=TicketNumber}"/>
+                            <GridViewColumn Header="Car plate number:" Width="130" DisplayMemberBinding="{Binding Path=CarPlateNumber}"/>
+                            <GridViewColumn Header="Entry date and time: " Width="175" DisplayMemberBinding="{Binding Path=EntryDt}"/>
+                            <GridViewColumn Header="Payment date and time: " Width="175" DisplayMemberBinding="{Binding Path=PaymentDt}"/>
+                            <GridViewColumn Header="Exit date and time" Width="175" DisplayMemberBinding="{Binding Path=ExitDt}"/>
+                            <GridViewColumn Header="Total Payment:" Width="100" DisplayMemberBinding="{Binding Path=TotalPayment}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

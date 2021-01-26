@@ -1,0 +1,29 @@
+[
+  {
+    "EntryDt": "2019-11-29T22:03:00Z",
+    "CarPlateNumber": "A451BX750",
+    "TicketNumber": 24,
+    "UserId": 1,
+    "PaymentDt": "2019-11-29T22:03:08Z",
+    "ExitDt": "2019-11-29T22:19:22Z",
+    "TotalPayment": 300
+  },
+  {
+    "EntryDt": "2019-12-12T11:03:00Z",
+    "CarPlateNumber": "A451BX750",
+    "TicketNumber": 25,
+    "UserId": 1,
+    "PaymentDt": "2019-12-12T12:01:08Z",
+    "ExitDt": "2019-12-12T12:05:05Z",
+    "TotalPayment": 50
+  },
+  {
+    "EntryDt": "2020-11-11T20:03:00Z",
+    "CarPlateNumber": "A451BX919",
+    "TicketNumber": 26,
+    "UserId": 3,
+    "PaymentDt": "2020-11-11T22:09:08Z",
+    "ExitDt": "2019-11-29T22:19:22Z",
+    "TotalPayment": 140
+  }
+]

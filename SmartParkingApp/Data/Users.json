@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Name": "Иван Иванов",
+    "CarPlateNumber": "A451BX750",
+    "Phone": "+79102314312",
+    "Password": "1111"
+  },
+  {
+    "Id": 2,
+    "Name": "Maria Petrova",
+    "CarPlateNumber": "A451BX333",
+    "Phone": "+79123334455",
+    "Password": "0000"
+  },
+  {
+    "Id": 3,
+    "Name": "Olga Kudaeva",
+    "CarPlateNumber": "A451BX919",
+    "Phone": "+79123338899",
+    "Password": "1234"
+  },
+  {
+    "Id": 4,
+    "Name": "Artem Sidorov",
+    "CarPlateNumber": "A451BX777",
+    "Phone": "+79123337711",
+    "Password": "2222"
+  },
+  {
+    "Id": 5,
+    "Name": "Petr Bogdanov",
+    "CarPlateNumber": "A451BP111",
+    "Phone": "+79123332345",
+    "Password": "3333"
+  }
+]
